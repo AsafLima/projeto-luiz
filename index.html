@@ -53,13 +53,25 @@
             <button id="criarAlunoBtn" class="btn btn-primary">Criar Aluno</button> 
             <button id="editarAlunoBtn" class="btn btn-warning">Editar Aluno</button> 
             <button id="limpar" class="btn btn-secondary">Cancelar</button> 
+
+            <div class="check">
+              <input type="checkbox" id="checkNome" checked>
+              <label>Nome</label><br>
+              <input type="checkbox" id="checkSobrenome" checked>
+              <label>Sobrenome</label><br>
+              <input type="checkbox" id="checkEmail" checked>
+              <label>Email</label><br>
+              <input type="checkbox" id="checkTel" checked>
+              <label>Telefone</label>
+            </div>
+
       </form>
       <table class="table" >
         <thead>
-          <th>Nome</th>
-          <th>Sobrenome</th>
-          <th>Email</th>
-          <th>Telefone</th>
+          <th id="THnome">Nome</th>
+          <th id="THsobrenome">Sobrenome</th>
+          <th id="THemail">Email</th>
+          <th id="THtel">Telefone</th>
         </thead>
         <tbody id="items">
 
@@ -68,6 +80,7 @@
     </div>
     <script src="js/index.js"></script>
     <script src="js/filtro.js"></script>
+    <script src="js/check.js"></script>
 </body>
 
 </html>

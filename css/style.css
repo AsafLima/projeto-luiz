@@ -273,3 +273,31 @@ body{
 .invisivel{
     display: none;
 }
+.check{
+    background-color: #303030;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    user-select: none;
+    display: inline-block;
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    border-radius: 24px;
+    line-height: 30px;
+}
+.check input[type="checkbox"]{
+    border: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.check input[type="checkbox"]:checked{
+    content: '\2713';
+    background: #2ecc71;
+    border: 2px solid #2ecc71;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
