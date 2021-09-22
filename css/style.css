@@ -1,0 +1,267 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #303030;
+}
+.container{
+    width: 100%;
+}
+
+.box{
+    width: 40%;
+    padding: 40px 0 40px 0;
+    position: relative;
+    background: #191919;
+    text-align: center;
+    float: left;
+}
+.box h1{
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    user-select: none;
+}
+.box input[type="text"],
+.box input[type="email"],
+.box input[type="tel"]{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.box input[type="text"]:focus,
+.box input[type="email"]:focus,
+.box input[type="tel"]:focus{
+    width: 280px;
+    border-color: #2ecc71;
+}
+.box button{
+    border: 0;
+    background: #303030;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.box button:hover{
+    background: #2ecc71;
+}
+
+.table{
+    width: 60%;
+    padding: 80px 0 40px 0;
+    position: relative;
+    background: #191919;
+    text-align: center;
+    float: right;
+}
+.table th{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 20px 0 20px 0;
+    border-left: 1px solid #3498db;
+    user-select: none;
+}
+.table td{
+    color: white;
+    font-size: 13px;
+    padding: 10px 0 10px 0;
+    border-left: 1px solid #3498db;
+    border-bottom: 1px solid #3498db;
+    user-select: none;
+}
+.table tbody button{
+    border: 0;
+    outline: none;
+    text-align: center;
+    color: white;
+    background: #303030;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+#editarAlunoBtn:hover{
+    background: #cc952e;
+}
+#limpar:hover{
+    background: #cc2e2e;
+}
+
+.alert.alert-success.alert-dismissible{
+    color: white;
+    background: #2ecc71;
+    padding: 20px 0 20px 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 90%;
+}
+.alert.alert-warning.alert-dismissible{
+    width: 100%;
+    color: white;
+    background: #cc2e2e;
+    padding: 20px 0 20px 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: left;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 90%;
+}
+.btn-close{
+    position: relative;
+    float: right;
+    background: #303030;
+    outline: none;
+    border: 0;
+    color: white;
+}
+.btn-close:before{
+    content: "X";
+    font-size: 1.3em;
+}
+
+#campoinvalido{
+    border-color: #cc2e2e;
+    transition: 0.25s;
+}
+
+#btnApaga:hover{
+    background: #cc2e2e;
+}
+#btnEdita:hover{
+    background: #cc952e;
+}
+#btnAlert:hover{
+    background: #2ecc71;
+}
+#tdBtn{
+    border: 0;
+    border-bottom: 1px solid #3498db;
+}
+
+.filtro{
+    width: 40px;
+    background: #191919;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    margin: 0 0 0 20px;
+    transition: 0.4s;
+}
+.btnFiltro{
+    color: #3498db;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.txtFiltro{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+}
+.filtro:hover{
+    width: 280px;
+}
+.filtro:hover > .txtFiltro{
+    width: 240px;
+}
+.filtro:hover > .btnFiltro{
+    background: #303030;
+    color: #2ecc71;
+}
+.cabecalho{
+    background: #3498db;
+    height: 80px;
+    padding-top: 20px;
+}
+.nomeHeader{
+    float: right;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    transition: 0.5s;
+    user-select: none;
+    cursor: pointer;
+}
+#nome{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2770a1;
+    transition: 0.5s;
+    user-select: none;
+}
+.nomeHeader:hover{
+    background: #2770a1;
+}
+.nomeHeader:hover > #nome{
+    color: #191919;
+}
+#thTel{
+    border-right: 1px solid #3498db;
+}
+.msgErro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background: #191919;
+    padding: 15px;
+    border-radius: 24px;
+}
+#txtErro{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    user-select: none;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+@media only screen and (max-width: 800px){
+    .container {display: none;}
+    .cabecalho {display: none;}
+    .msgErro {display: block;}
+}
+.invisivel{
+    display: none;
+}
