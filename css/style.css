@@ -227,10 +227,18 @@ body{
     transition: 0.5s;
     user-select: none;
 }
+#insta{
+    color: #2770a1;
+    transition: 0.5s;
+    margin-left: 5px;
+}
 .nomeHeader:hover{
     background: #2770a1;
 }
 .nomeHeader:hover > #nome{
+    color: #191919;
+}
+.nomeHeader:hover > #insta{
     color: #191919;
 }
 #thTel{
